@@ -14,7 +14,7 @@ export const productsStore = createSlice({
   },
   reducers: {
     addProduct: (state, action) => {
-      state.products = action.payload;
+      state.products = [...state.products, action.payload];
     },
   },
 });
